@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ASSESTS/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="ASSESTS/CSS/style.css">
+    <title>Cinema</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cinema Planet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_blank">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" target="_blank">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html" target="_blank">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- NAV BAR -->
+    <section class="row my-5 contactparent ">
+        <div class="col-12 col-md-6 textSpace text-white">
+            <h2 >Contact Us</h2>
+        <div class="textField">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" id="Name">
+        </div>
+
+        <div class="textField">
+            <label for="Email">Email</label>
+            <input type="text" placeholder="Enter your email" id="Email">
+        </div>
+
+        <div class="textField">
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Write message" id="message"></textarea>
+        </div>
+        <input class="btn btn-outline-warning" type="submit" value="Send" onclick="formhandle(event)" >
+        <span class="errorMsg text-danger" id="errorMsg">Please Insert All Data</span>
+    </div>
+    </section>
+<!-- footer -->
+<footer>
+  <div class="container">
+  <h2 class="text-center">Cinema Planet</h2>
+  <div class="row">
+
+<div class="col-12 col-md-4">
+<h4 class="border-bottom">Home</h4>
+<ul>
+  <li>Home</li>
+  <li>About Us</li>
+  <li>Contact Us</li>
+</ul>
+</div>
+
+<div class="col-12 col-md-4">
+  <h4 class="border-bottom">About Us</h4>
+  <ul>
+    <li>Movies</li>
+    <li>Snacks</li>
+    <li>We Have Multiple Movies to Watch</li>
+  </ul>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <h4 class="border-bottom">Contact Us</h4>
+<input type="text" placeholder="Contact Us">
+<input type="submit" value="Send"  >
+
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+    <script src="ASSESTS/JS/bootstrap.min.js"></script>
+    <script src="ASSESTS/JS/script.js"></script>
+</body>
+</html>
